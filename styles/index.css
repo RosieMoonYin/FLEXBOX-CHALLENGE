@@ -1,0 +1,336 @@
+body {
+     background-color: #370617;
+     max-width: 1152px;
+     width: 100%;
+     min-height: 700px;
+
+}
+
+/*the main container holds all 6 of the rectangles
+I use wrap property to shift them onto next line,
+NOTE: this makes design responsive when changing screen size*/
+.main-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    max-width: 1152px;
+    width: 100%;
+    min-height: 700px;
+}
+
+/*BOX 1 = box one is a flex container where 
+three square elements are aligned bottom left  
+equally spaced with margins of 20px each*/
+.flexbox-container-1 {
+    display:flex;
+    justify-content: flex-start;
+    align-items:flex-end;
+
+    box-shadow: 0px, 4px,4px, rgba(0, 0, 0, 0.25);
+
+
+    background-color: aqua;
+    border-radius: 8px;
+    width: 486px;
+    height: 160px;
+    margin: 20px;
+    
+}
+
+    .flexbox-item-1a {
+        display: flex;
+        background-color: blue;
+        border-radius: 4px;
+        width: 78px;
+        height: 78px;
+        margin: 20px;
+}
+
+    .flexbox-item-1b {
+        display: flex;
+        background-color: blue;
+        border-radius: 4px;
+        width: 78px;
+        height: 78px;
+        margin: 20px;  
+    }
+
+    .flexbox-item-1c {
+        display: flex;
+        background-color: blue;
+        border-radius: 4px;
+        width: 78px;
+        height: 78px;
+        margin: 20px;  
+    }
+
+/*BOX 2 deets= Boxes seem to have stretch property on (align items) 
+however stretch didnt work so I used width and height!*/
+.flexbox-container-2 {
+    display:flex;
+    justify-content: center;
+    align-items: stretch;
+
+    box-shadow: 0px, 4px,4px, rgba(0, 0, 0, 0.25);
+
+    background-color: rgb(188, 196, 194);
+    border-radius: 8px;
+    width: 486px;
+    height: 160px;
+    margin: 20px;
+}
+
+    .flexbox-item-2a {
+        display: flex;
+        background-color: blue;
+        border-radius: 4px;
+        width: 78px;
+        height: 120px;
+        margin: 20px;
+    }
+
+    .flexbox-item-2b {
+        display: flex;
+        background-color: blue;
+        border-radius: 4px;
+        width: 78px;
+        height: 120px;
+        margin: 20px;
+    }
+
+    .flexbox-item-2c {
+        display: flex;
+        background-color: blue;
+        border-radius: 4px;
+        width: 78px;
+        height: 120px;
+        margin: 20px;
+    }
+
+    /*BOX 3 details= justified on right side centered vertically*/
+.flexbox-container-3 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: rgb(147, 73, 187);
+
+    border-radius: 8px;
+    width: 486px;
+    height: 160px;
+    margin: 20px;
+}
+
+.flexbox-item-3a {
+    display: flex;
+    background-color: blue;
+    border-radius: 4px;
+    width: 78px;
+    height: 78px;
+    margin: 20px;
+}
+
+.flexbox-item-3b {
+    display: flex;
+    background-color: blue;
+    border-radius: 4px;
+    width: 78px;
+    height: 78px;
+    margin: 20px;
+}
+
+.flexbox-item-3c {
+    display: flex;
+    background-color: blue;
+    border-radius: 4px;
+    width: 78px;
+    height: 78px;
+    margin: 20px;
+}
+
+/*BOX 4 details= item 4c has align self property*/
+.flexbox-container-4{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    background-color: rgb(250, 40, 114);
+    
+    box-shadow: 0px, 4px,4px, rgba(0, 0, 0, 0.25);
+
+    background-color: aqua;
+
+    border-radius: 8px;
+    width: 486px;
+    height: 160px;
+    margin: 20px;
+}
+
+.flexbox-item-4a {
+    display: flex;
+    background-color: blue;
+    border-radius: 4px;
+    width: 78px;
+    height: 78px;
+    margin: 20px;
+}
+
+.flexbox-item-4b {
+    display: flex;
+    background-color: blue;
+    border-radius: 4px;
+    width: 78px;
+    height: 78px;
+    margin: 20px;
+}
+
+.flexbox-item-4c {
+    display: flex;
+    align-self: flex-end;
+    background-color: blue;
+    border-radius: 4px;
+    width: 78px;
+    height: 78px;
+    margin: 20px;
+}
+
+/*BOX 5 details= boxes include text -perhaps need to align
+ text on vertical axis? mixed dimensions of items*/
+.flexbox-container-5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(108, 234, 24);
+  
+    border-radius: 8px;
+    width: 486px;
+    height: 160px;
+    margin: 20px;
+
+    color: rgb(108, 234, 24);
+}
+
+.flexbox-item-5a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    border-radius: 4px;
+    width: 78px;
+    height: 120px;
+    margin: 20px;
+
+    font-family: 'Permanent Marker', cursive;
+    font-size: 11px;
+
+}
+
+.flexbox-item-5b {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    border-radius: 4px;
+    width: 78px;
+    height: 78px;
+    margin: 20px;
+
+    font-family: 'Permanent Marker', cursive;
+    font-size: 11px;
+    
+
+}
+
+.flexbox-item-5c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    border-radius: 4px;
+    width: 78px;
+    height: 120px;
+    margin: 20px;
+
+    font-family: 'Permanent Marker', cursive;
+    font-size: 11px;
+}
+
+
+/*BOX 6 details= mixture of dimensions items centered on both axis*/
+.flexbox-container-6 {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 103, 33);
+    border: 5px;
+    border-width: 5px;
+    
+    border-radius: 8px;
+    width: 486px;
+    height: 160px;
+    margin: 20px;
+}
+
+.flexbox-item-6a {
+    display: flex;
+    background-color: blue;
+    border-radius: 4px;
+    width: 78px;
+    height: 78px;
+    margin: 20px;
+}
+
+.flexbox-item-6b {
+    display: flex;
+    background-color: blue;
+    border-radius: 4px;
+    width: 156px;
+    height: 78px;
+    margin: 20px;
+}
+
+.flexbox-item-6c {
+    display: flex;
+    background-color: blue;
+    border-radius: 4px;
+    width: 78px;
+    height: 78px;
+    margin: 20px;
+}
+
+
+/*BEGIN FLEXBOX CHALLENGE 2 : circles!*/
+
+.main-container2 {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    max-width: 1152px;
+    width: 100%;
+    min-height: 700px;
+}
+
+.flexbox-container-C1 {
+    display:flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    width: 273px;
+    height: 220px;
+    background-color: azure;
+    border-radius: 0px;
+
+}
+
+.flexbox-item {
+    display:flex;
+
+    background-color: black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+}
