@@ -303,25 +303,29 @@ however stretch didnt work so I used width and height!*/
 
 .main-container2 {
     display:flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
 
     max-width: 1152px;
     width: 100%;
     min-height: 700px;
+    margin: 20px;
+    padding: 20px;
 }
 
 .flexbox-container-C1 {
     display:flex;
     justify-content: flex-start;
     align-items: flex-start;
+    align-content: flex-start;
     flex-wrap: wrap;
 
     width: 273px;
     height: 220px;
     background-color: azure;
     border-radius: 0px;
+    margin: 20px;
 
 }
 
@@ -332,5 +336,66 @@ however stretch didnt work so I used width and height!*/
     border-radius: 50%;
     width: 50px;
     height: 50px;
+    margin: 10px;
+}
+
+.flexbox-container-C2 {
+    display:flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: wrap-reverse;
+
+    width: 273px;
+    height: 220px;
+    background-color: azure;
+    border-radius: 0px;
     margin: 20px;
+}
+
+.flexbox-container-C3 {
+    display:flex;
+    justify-content: center;
+    align-items:stretch;
+    align-content: space-between;
+    flex-wrap: wrap;
+
+    width: 273px;
+    height: 220px;
+    background-color: azure;
+    border-radius: 0px;
+    margin: 20px;
+}
+
+.flexbox-container-C4 {
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+    width: 273px;
+    height: 220px;
+    background-color: azure;
+    border-radius: 0px;
+    margin: 20px;
+
+}
+
+.flexbox-container-C5 {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+
+    width: 273px;
+    height: 220px;
+    background-color: azure;
+    border-radius: 0px;
+    margin: 20px;
+
+}
+
+.circle5a, .circle5b, .circle5c, .circle5d, .circle5e, .circle5f {
+    display: flex;
+    margin: 10px;
 }
